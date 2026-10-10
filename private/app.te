@@ -32,6 +32,7 @@ userdebug_or_eng(`
 # Allow apps to read the Test Harness Mode property. This property is used in
 # the implementation of ActivityManager.isDeviceInTestHarnessMode()
 get_prop(appdomain, test_harness_prop)
+get_prop(appdomain, spoofing_rom_hide_prop)
 
 get_prop(appdomain, boot_status_prop)
 get_prop(appdomain, dalvik_config_prop_type)

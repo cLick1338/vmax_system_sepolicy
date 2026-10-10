@@ -200,6 +200,9 @@ allow zygote same_process_hal_file:file { execute read open getattr map };
 # Allow zygote to read build properties for attestation feature
 get_prop(zygote, build_attestation_prop)
 
+# App UIDs read the libc gate before their SELinux domain transition.
+get_prop({ zygote webview_zygote app_zygote }, spoofing_rom_hide_prop)
+
 # Allow the zygote to access storage properties to check if sdcardfs is enabled.
 get_prop(zygote, storage_config_prop);
 
