@@ -258,3 +258,5 @@ until_board_api(202504, `
 
 ## END Types added in 202504 in public/file.te
 
+# Early boot ROM hiding choice, owned by system_server.
+type spoofing_cache_file, file_type;

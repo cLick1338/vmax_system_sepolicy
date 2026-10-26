@@ -861,6 +861,7 @@
 # Cache files
 #
 /cache(/.*)?		u:object_r:cache_file:s0
+/cache/spoofing(/.*)?    u:object_r:spoofing_cache_file:s0
 /cache/recovery(/.*)?	u:object_r:cache_recovery_file:s0
 # General backup/restore interchange with apps
 /cache/backup_stage(/.*)?	u:object_r:cache_backup_file:s0

@@ -868,3 +868,6 @@ neverallow { domain -init } property_service_version_prop:property_service set;
 
 # Only init can set keystore.boot_level
 neverallow { domain -init } keystore_listen_prop:property_service set;
+
+# Read the ROM hiding choice before persistent properties are loaded.
+allow init spoofing_cache_file:file r_file_perms;

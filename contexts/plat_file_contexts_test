@@ -1239,6 +1239,9 @@
 
 /cache                                                            cache_file
 /cache/test                                                       cache_file
+/cache/spoofing                                                   spoofing_cache_file
+/cache/spoofing/rom_hide                                          spoofing_cache_file
+/cache/spoofing/rom_hide.new                                      spoofing_cache_file
 /cache/recovery                                                   cache_recovery_file
 /cache/recovery/test                                              cache_recovery_file
 /cache/backup_stage                                               cache_backup_file

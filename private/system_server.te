@@ -1701,3 +1701,9 @@ neverallow {
   -system_server
   -shell
 } power_debug_prop:property_service set;
+
+# Persist the active user ROM hiding choice for init.
+allow system_server spoofing_cache_file:dir rw_dir_perms;
+allow system_server spoofing_cache_file:file create_file_perms;
+neverallow { domain -init -system_server } spoofing_cache_file:dir no_w_dir_perms;
+neverallow { domain -init -system_server } spoofing_cache_file:file no_rw_file_perms;
