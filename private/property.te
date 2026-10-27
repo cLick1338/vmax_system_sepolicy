@@ -888,3 +888,6 @@ neverallow {
   -shell
   userdebug_or_eng(`-su')
 } pm_16kb_app_compat_prop:property_service set;
+
+# Vmax recovery installation option.
+system_internal_prop(vmax_ota_prop)

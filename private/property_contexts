@@ -1795,3 +1795,5 @@ trusty.security_vm.keymint.enabled u:object_r:trusty_security_vm_sys_vendor_prop
 mmd. u:object_r:mmd_prop:s0
 mmd.enabled_aconfig u:object_r:mmd_prop:s0 exact bool
 sys.spoof.rom_hide u:object_r:spoofing_rom_hide_prop:s0 exact bool
+
+vmax.ota.preserve_boot u:object_r:vmax_ota_prop:s0 exact bool

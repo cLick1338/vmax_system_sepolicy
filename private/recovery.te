@@ -3,6 +3,8 @@ typeattribute recovery coredomain;
 # The allow rules are only included in the recovery policy.
 # Otherwise recovery is only allowed the domain rules.
 recovery_only(`
+  set_prop(recovery, vmax_ota_prop)
+
   # Reboot the device
   set_prop(recovery, powerctl_prop)
 
